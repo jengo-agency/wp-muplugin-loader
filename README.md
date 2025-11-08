@@ -1,13 +1,11 @@
 # WP Must-Use Plugin Loader
 
-> This project is now abandoned. We've moved to use [Roots Bedrock Autoloader](https://github.com/roots/bedrock-autoloader) in our [project skeleton](https://github.com/boxuk/wp-project-skeleton).
-
 ## Attribution
 
 - This package was forked from
-  [WP Must-Use Plugin Loader](https://github.com/lkwdwrd/wp-muplugin-loader)
-  due to it seemingly falling into abandonment. We are happy to contribute our work back to the source should the maintainer pick up the project again.
-  
+  [WP Must-Use Plugin Loader](https://github.com/boxuk/wp-muplugin-loader/)
+  due to falling into deprecation. I was happy with this plugin, and bedrock autoloader not being a composer plugin, doesn't serve as replacement.
+
 ## Overview
 
 Managing plugins using the [Composer Installers](https://github.com/composer/installers) library works remarkably well. However, its handling of MU plugins leaves something to be desired.
@@ -24,7 +22,7 @@ In your project's `composer.json` file, require this package.
 "require": {
 	"composer/installers": "~1.2.0",
 	"johnpbloch/wordpress": "*",
-	"boxuk/wp-muplugin-loader": "~1.0",
+	"jengo/wp-muplugin-loader": "~1.0",
 }
 ```
 Make sure in the `extras` of your `composer.json` you have your mu-plugins path defined.
@@ -81,7 +79,7 @@ This is compatible with [WPackagist](https://wpackagist.org/). When adding plugi
 ```json
 "require": {
 	"johnpbloch/wordpress": "*",
-	"boxuk/wp-muplugin-loader": "~1.0",
+	"jengo/wp-muplugin-loader": "~1.0",
 	"wpackagist-plugin/rest-api": "*"
 },
 "extra": {
@@ -140,5 +138,5 @@ add_filter(
 );
 
 // Load the mu loader
-require_once 'vendor/boxuk/wp-muplugin-loader/src/mu-loader.php';
+require_once 'vendor/jengo/wp-muplugin-loader/src/mu-loader.php';
 ```
