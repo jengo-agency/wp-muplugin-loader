@@ -1,5 +1,5 @@
 {
-    "name": "jengo/wp-muplugin-loader",
+    "name": "jen-go/wp-muplugin-loader",
     "description": "A drop-in MU Plugin loader for WordPress",
     "keywords": [
         "wordpress",

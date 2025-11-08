@@ -22,7 +22,7 @@ In your project's `composer.json` file, require this package.
 "require": {
 	"composer/installers": "~1.2.0",
 	"johnpbloch/wordpress": "*",
-	"jengo/wp-muplugin-loader": "~1.0",
+	"jen-go/wp-muplugin-loader": "~1.0",
 }
 ```
 Make sure in the `extras` of your `composer.json` you have your mu-plugins path defined.
@@ -79,7 +79,7 @@ This is compatible with [WPackagist](https://wpackagist.org/). When adding plugi
 ```json
 "require": {
 	"johnpbloch/wordpress": "*",
-	"jengo/wp-muplugin-loader": "~1.0",
+	"jen-go/wp-muplugin-loader": "~1.0",
 	"wpackagist-plugin/rest-api": "*"
 },
 "extra": {
@@ -138,5 +138,5 @@ add_filter(
 );
 
 // Load the mu loader
-require_once 'vendor/jengo/wp-muplugin-loader/src/mu-loader.php';
+require_once 'vendor/jen-go/wp-muplugin-loader/src/mu-loader.php';
 ```
